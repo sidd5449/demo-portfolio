@@ -1,0 +1,58 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Dosis', sans-serif;
+}
+body{
+    box-sizing: border-box;
+    background-color: #121214;
+}
+::-webkit-scrollbar{
+    width: 0;
+}
+html{
+    scroll-behavior: smooth;
+}
+.navbar{
+    display: flex;
+    position: fixed;
+    flex-direction: column;
+    justify-content: space-around;
+    background:linear-gradient(#101011, #1b1b1b);
+    padding-top: 2vh;
+    padding-bottom: 8vh;
+    width: 5vw;
+    box-shadow: 2px 0px 18px #000;
+    height: 90vh;
+    align-items: center;
+}
+.navbar .logo img{
+    width: 50px;
+    cursor: pointer;
+}
+.menu{
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: space-between;
+    height: 60vh;
+    align-items: center;
+}
+.menu .button{
+    transform: rotateZ(270deg);
+
+}
+.button a{
+    text-decoration: none;
+    font-size: 16px;
+    color: #919294;
+    font-weight: 500;
+    transition: ease-in-out 0.3s;
+}
+.button a:hover{
+    color: #1B59C3;
+    font-size: 18px;
+}
+#current-button{
+    color: #1B59C3;
+    font-size: 18px;
+}
